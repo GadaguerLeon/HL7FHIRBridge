@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hl7fhir"
+version = "0.1.0"
+description = "Parse HL7 v2 messages and convert them to FHIR R4 resources"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Gadaguer Leon" }]
+dependencies = []
+
+[project.scripts]
+hl7fhir = "hl7fhir.__main__:main"
+
+[tool.setuptools]
+packages = ["hl7fhir"]
